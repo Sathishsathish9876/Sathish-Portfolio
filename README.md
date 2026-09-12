@@ -1,36 +1,63 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Sathish M - Professional Portfolio
 
-## Getting Started
+A modern, premium, and fully responsive personal portfolio website built to showcase my experience as a Full-Stack Developer.
 
-First, run the development server:
+## 🚀 Live Demo
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+*(Add your deployed Vercel/Netlify link here)*
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🛠️ Built With
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Framework:** [Next.js 15](https://nextjs.org/) (App Router)
+- **Language:** [TypeScript](https://www.typescriptlang.org/)
+- **Styling:** [Tailwind CSS v4](https://tailwindcss.com/)
+- **Animations:** [Framer Motion](https://www.framer.com/motion/) & CSS 3D Transforms
+- **Smooth Scrolling:** [Lenis](https://lenis.studiofreight.com/)
+- **Icons:** [Lucide React](https://lucide.dev/)
+- **Email Integration:** [Brevo API](https://www.brevo.com/)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## ✨ Key Features
 
-## Learn More
+- **Premium Black & Red Theme:** A highly professional aesthetic designed for developers.
+- **3D Interactive Elements:** Cards that tilt and react to hover using CSS 3D transforms (`translateZ`, `rotateX`, `rotateY`).
+- **Smooth Scrolling:** Buttery-smooth page scrolling integrated with parallax effects.
+- **Dynamic Timeline:** An interactive vertical progress line that tracks your scroll through the Experience section.
+- **Working Contact Form:** Server-side API route that sends form submissions directly to your email using the Brevo API.
 
-To learn more about Next.js, take a look at the following resources:
+## 💻 Running Locally
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/Sathishsathish9876/sathish-portfolio.git
+   cd sathish-portfolio
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
 
-## Deploy on Vercel
+3. **Set up Environment Variables:**
+   Create a `.env.local` file in the root directory and add your Brevo API key:
+   ```env
+   BREVO_API_KEY=your_api_key_here
+   CONTACT_EMAIL=sathishsanthosh7155@gmail.com
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+4. **Run the development server:**
+   ```bash
+   npm run dev
+   ```
+   Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📂 Project Structure
+
+- `src/app/` - Next.js App Router (Layouts, Pages, API Routes)
+- `src/components/sections/` - Major page sections (Hero, About, Projects, etc.)
+- `src/components/ui/` - Reusable UI components (Navbar, Footer, Container)
+- `src/data/` - Content files (Experience, Projects, Skills) to easily update text without changing components.
+- `public/assets/` - Static assets (Profile image, Resume PDF)
+
+## 📄 License
+
+This project is open-source and available under the [MIT License](LICENSE).
